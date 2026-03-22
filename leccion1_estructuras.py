@@ -81,15 +81,17 @@ print(f"Mas daños: {max_daño['contenedor']} con {max_daño['dañados']} SKUs")
 #             TUPLAS y conJUNTOS
 
 # Tupla - como una lista pero inmutable (no se puede cambiar)
-#se usa para datos que no deben modificarse
+# se usa para datos que no deben modificarse
 
-turnos_validos = (1,2,3)
-coordenadas_bodega = (4.7110,-74.0721) # latitud, longitud - no deben cambiar
+turnos_validos = (1, 2, 3)
+coordenadas_bodega = (4.7110, -74.0721)  # latitud, longitud - no deben cambiar
 
 # Conjunto (set) - colección sin duplicados
-#Perfecto para encontrar valores únicos
+# Perfecto para encontrar valores únicos
 
-skus_ingresados = ["A-001", "A-002", "A-001", "A-003", "A-002","A-001"]
+skus_ingresados = ["A-001", "A-002", "A-001", "A-003", "A-002", "A-001"]
 skus_unicos = set(skus_ingresados)
 print(f"SKUs únicos: {skus_unicos}")  # SKUs únicos:
-print(f"Duplicados eliminados: {len(skus_ingresados) - len(skus_unicos)}")  # Duplicados eliminados: 3
+print(
+    f"Duplicados eliminados: {len(skus_ingresados) - len(skus_unicos)}"
+)  # Duplicados eliminados: 3
