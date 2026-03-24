@@ -15,7 +15,7 @@ df = pd.DataFrame(personal_sucio)
 
 # Eliminar duplicados
 
-df= df.drop_duplicates()
+df = df.drop_duplicates()
 
 # Estandarizar nombre
 
